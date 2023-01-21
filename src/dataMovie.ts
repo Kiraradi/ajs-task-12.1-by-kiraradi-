@@ -7,5 +7,4 @@ export default interface dataMovie {
     readonly genre: object
     readonly timeInMinutes: number;
     readonly poster: string;
-    readonly formatMovie: string;
 }

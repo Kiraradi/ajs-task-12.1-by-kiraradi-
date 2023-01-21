@@ -10,7 +10,6 @@ export default class Movie implements dataMovie,dataProduct  {
         readonly genre: object,
         readonly timeInMinutes: number,
         readonly poster: string,
-        readonly formatMovie: string,
         readonly id: number,
         readonly price: number,
         readonly category: string,

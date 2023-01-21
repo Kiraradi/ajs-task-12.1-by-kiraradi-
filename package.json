@@ -25,6 +25,7 @@
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.2.6",
     "ajv": "^7.2.4",
     "babel-jest": "^29.3.1",
     "babel-loader": "^9.1.2",

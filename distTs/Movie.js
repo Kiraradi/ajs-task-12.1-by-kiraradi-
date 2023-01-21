@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Movie = /** @class */ (function () {
-    function Movie(localizedName, originalName, year, country, slogan, genre, timeInMinutes, poster, formatMovie, id, price, category) {
+    function Movie(localizedName, originalName, year, country, slogan, genre, timeInMinutes, poster, id, price, category) {
         this.localizedName = localizedName;
         this.originalName = originalName;
         this.year = year;
@@ -10,7 +10,6 @@ var Movie = /** @class */ (function () {
         this.genre = genre;
         this.timeInMinutes = timeInMinutes;
         this.poster = poster;
-        this.formatMovie = formatMovie;
         this.id = id;
         this.price = price;
         this.category = category;
