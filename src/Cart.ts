@@ -4,7 +4,20 @@ export default class Cart {
     private _items: dataProduct[] = [];
 
     add(item: dataProduct): void {
-        this._items.push(item);
+        if (item.category === 'Movie' || item.category === 'Books' || item.category === 'Music') {
+            const checkItem = this._items.some(itemCart => itemCart.id === item.id)
+            if (!checkItem) {
+                this._items.push(item);
+            }
+        } else if (item.category === 'Electronics') {
+            const idItem = this._items.findIndex(itemCart => itemCart.id === item.id);
+            if (idItem >= 0) {
+                this._items[idItem].quantity += item.quantity;
+            } else {
+                this._items.push(item);
+            }
+        }
+
     }
 
     get items(): dataProduct[] {

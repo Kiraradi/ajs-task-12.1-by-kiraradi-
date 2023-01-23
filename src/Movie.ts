@@ -13,6 +13,7 @@ export default class Movie implements dataMovie,dataProduct  {
         readonly id: number,
         readonly price: number,
         readonly category: string,
+        readonly quantity: 1,
     ){}
     
 }
