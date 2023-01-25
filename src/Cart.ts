@@ -42,4 +42,11 @@ export default class Cart {
             this._items.splice(idItem,1);
         }
     }
+
+    takeAway(id: number): void {
+        const idItem = this._items.findIndex(item => item.id === id);
+        if (idItem >= 0) {
+            this._items[idItem].quantity > 0 ? this._items[idItem].quantity-- : this._items[idItem].quantity = 0;
+        }
+    }
 }
