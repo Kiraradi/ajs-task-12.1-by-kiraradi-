@@ -28,8 +28,8 @@ export default class Cart {
         if (this._items.length === 0 ) {
             return 0
         }
-        const sum = this._items.reduce((accumulator, currentValue) => accumulator + currentValue.price, 0)
-        return sum
+        
+        return this._items.reduce((accumulator, currentValue) => accumulator + currentValue.price, 0)
     }
 
     discountedAmount(discount: number): number {
